@@ -7,15 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A08E6B5C2A4C7C73482A5852 /* Pods_boatsaily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458F8ABE6534B01F2EBCA198 /* Pods_boatsaily.framework */; };
+		D907C69C2C54E42E00DA6862 /* BoatInformationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D907C69B2C54E42E00DA6862 /* BoatInformationList.swift */; };
+		D93340212C5633C800645AF7 /* CreateBoatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D933401F2C5633C800645AF7 /* CreateBoatCollectionViewCell.swift */; };
+		D93340222C5633C800645AF7 /* CreateBoatCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93340202C5633C800645AF7 /* CreateBoatCollectionViewCell.xib */; };
+		D93340272C56753E00645AF7 /* Proxima Nova Font.otf in Resources */ = {isa = PBXBuildFile; fileRef = D93340242C56753E00645AF7 /* Proxima Nova Font.otf */; };
+		D93340282C56753E00645AF7 /* Proxima-Nova-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D93340252C56753E00645AF7 /* Proxima-Nova-Semibold.ttf */; };
+		D93340292C56753E00645AF7 /* Proxima-Nova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D93340262C56753E00645AF7 /* Proxima-Nova-Bold.otf */; };
 		D94A1F5B2C49A6920066A996 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A1F5A2C49A6920066A996 /* AppDelegate.swift */; };
-		D94A1F5D2C49A6920066A996 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A1F5C2C49A6920066A996 /* SceneDelegate.swift */; };
-		D94A1F5F2C49A6920066A996 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A1F5E2C49A6920066A996 /* ViewController.swift */; };
-		D94A1F622C49A6920066A996 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94A1F602C49A6920066A996 /* Main.storyboard */; };
-		D94A1F642C49A6930066A996 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D94A1F632C49A6930066A996 /* Assets.xcassets */; };
-		D94A1F672C49A6930066A996 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94A1F652C49A6930066A996 /* LaunchScreen.storyboard */; };
 		D94A1F722C49A6940066A996 /* boatsailyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A1F712C49A6940066A996 /* boatsailyTests.swift */; };
 		D94A1F7C2C49A6940066A996 /* boatsailyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A1F7B2C49A6940066A996 /* boatsailyUITests.swift */; };
 		D94A1F7E2C49A6940066A996 /* boatsailyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A1F7D2C49A6940066A996 /* boatsailyUITestsLaunchTests.swift */; };
+		D94A1F8F2C49AF550066A996 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A1F8E2C49AF550066A996 /* TabBarViewController.swift */; };
+		D94A1F912C49B1850066A996 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A1F902C49B1850066A996 /* Coordinator.swift */; };
+		D94A1F952C49B3E30066A996 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A1F942C49B3E30066A996 /* Storyboarded.swift */; };
+		D94A1F992C4A31C50066A996 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A1F982C4A31C50066A996 /* HomeViewController.swift */; };
+		D94A1F9B2C4A31D50066A996 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A1F9A2C4A31D50066A996 /* HomeCoordinator.swift */; };
+		D94A1F9D2C4A31FE0066A996 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A1F9C2C4A31FE0066A996 /* HomeViewModel.swift */; };
+		D94A1F9F2C4A39E00066A996 /* ProifleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A1F9E2C4A39E00066A996 /* ProifleViewController.swift */; };
+		D94A1FA22C4A3A000066A996 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94A1FA12C4A3A000066A996 /* ProfileCoordinator.swift */; };
+		D97AC9B92C4A3C0500CB9EEA /* BoatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97AC9B82C4A3C0500CB9EEA /* BoatListViewController.swift */; };
+		D97AC9BE2C4C44D000CB9EEA /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97AC9BD2C4C44D000CB9EEA /* ProfileViewModel.swift */; };
+		D97AC9C12C51060900CB9EEA /* AdminPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97AC9C02C51060900CB9EEA /* AdminPageViewController.swift */; };
+		D97AC9C32C51061E00CB9EEA /* AdminPageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97AC9C22C51061E00CB9EEA /* AdminPageCoordinator.swift */; };
+		D97AC9C52C51062900CB9EEA /* AdminPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97AC9C42C51062900CB9EEA /* AdminPageViewModel.swift */; };
+		D97AC9CA2C52239A00CB9EEA /* CreateBoatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97AC9C92C52239A00CB9EEA /* CreateBoatViewController.swift */; };
+		D97AC9CC2C5223A800CB9EEA /* CreateBoatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97AC9CB2C5223A800CB9EEA /* CreateBoatViewModel.swift */; };
+		D97AC9CE2C5223B400CB9EEA /* CreateBoatCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97AC9CD2C5223B400CB9EEA /* CreateBoatCoordinator.swift */; };
+		D97AC9D02C5226BF00CB9EEA /* AdminInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97AC9CF2C5226BF00CB9EEA /* AdminInfoViewController.swift */; };
+		D97AC9D22C5226CF00CB9EEA /* AdminInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97AC9D12C5226CF00CB9EEA /* AdminInfoViewModel.swift */; };
+		D97AC9D42C5226DB00CB9EEA /* AdminInfoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97AC9D32C5226DB00CB9EEA /* AdminInfoCoordinator.swift */; };
+		D97AC9D82C5227BC00CB9EEA /* AdminBoatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97AC9D72C5227BC00CB9EEA /* AdminBoatListViewModel.swift */; };
+		D97AC9DA2C5227C600CB9EEA /* AdminBoatListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97AC9D92C5227C600CB9EEA /* AdminBoatListCoordinator.swift */; };
+		D9A90FEB2C6096AF001AF40B /* AdminBoatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97AC9D52C5227AC00CB9EEA /* AdminBoatListViewController.swift */; };
+		D9A90FEC2C60986B001AF40B /* BoatListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97AC9BA2C4A3C2700CB9EEA /* BoatListCoordinator.swift */; };
+		D9B58B852C6E22F200698B10 /* AdminBoatListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B58B832C6E22F200698B10 /* AdminBoatListTableViewCell.swift */; };
+		D9B58B862C6E22F200698B10 /* AdminBoatListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9B58B842C6E22F200698B10 /* AdminBoatListTableViewCell.xib */; };
+		D9B58B892C70D0C400698B10 /* ImageSlideshow in Frameworks */ = {isa = PBXBuildFile; productRef = D9B58B882C70D0C400698B10 /* ImageSlideshow */; };
+		D9B58B8C2C70D5EC00698B10 /* AdminBoatListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B58B8B2C70D5EC00698B10 /* AdminBoatListDetailViewController.swift */; };
+		D9B58B8E2C70D77F00698B10 /* AdminBoatListDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B58B8D2C70D77F00698B10 /* AdminBoatListDetailCoordinator.swift */; };
+		D9B58B902C70D79C00698B10 /* AdminBoatListDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B58B8F2C70D79C00698B10 /* AdminBoatListDetailViewModel.swift */; };
+		D9B58B952C70D7FA00698B10 /* AdminBoatListDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B58B932C70D7FA00698B10 /* AdminBoatListDetailCollectionViewCell.swift */; };
+		D9B58B962C70D7FA00698B10 /* AdminBoatListDetailCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9B58B942C70D7FA00698B10 /* AdminBoatListDetailCollectionViewCell.xib */; };
+		D9B58B982C70DE6400698B10 /* BoatInformationDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B58B972C70DE6400698B10 /* BoatInformationDetailList.swift */; };
+		D9DDFB1D2C551ECB0066C4DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94A1F602C49A6920066A996 /* Main.storyboard */; };
+		D9DDFB1E2C551ED20066C4DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94A1F652C49A6930066A996 /* LaunchScreen.storyboard */; };
+		D9DDFB1F2C551ED60066C4DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D94A1F632C49A6930066A996 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +73,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		090906C3DD9D030C7D21F04E /* Pods-boatsaily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-boatsaily.release.xcconfig"; path = "Target Support Files/Pods-boatsaily/Pods-boatsaily.release.xcconfig"; sourceTree = "<group>"; };
+		458F8ABE6534B01F2EBCA198 /* Pods_boatsaily.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_boatsaily.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D907C69B2C54E42E00DA6862 /* BoatInformationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatInformationList.swift; sourceTree = "<group>"; };
+		D933401F2C5633C800645AF7 /* CreateBoatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBoatCollectionViewCell.swift; sourceTree = "<group>"; };
+		D93340202C5633C800645AF7 /* CreateBoatCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateBoatCollectionViewCell.xib; sourceTree = "<group>"; };
+		D93340242C56753E00645AF7 /* Proxima Nova Font.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Font.otf"; sourceTree = "<group>"; };
+		D93340252C56753E00645AF7 /* Proxima-Nova-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima-Nova-Semibold.ttf"; sourceTree = "<group>"; };
+		D93340262C56753E00645AF7 /* Proxima-Nova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima-Nova-Bold.otf"; sourceTree = "<group>"; };
 		D94A1F572C49A6920066A996 /* boatsaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boatsaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D94A1F5A2C49A6920066A996 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D94A1F5C2C49A6920066A996 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D94A1F5E2C49A6920066A996 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D94A1F612C49A6920066A996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D94A1F632C49A6930066A996 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D94A1F662C49A6930066A996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +92,38 @@
 		D94A1F772C49A6940066A996 /* boatsailyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boatsailyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D94A1F7B2C49A6940066A996 /* boatsailyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boatsailyUITests.swift; sourceTree = "<group>"; };
 		D94A1F7D2C49A6940066A996 /* boatsailyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boatsailyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D94A1F8E2C49AF550066A996 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		D94A1F902C49B1850066A996 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		D94A1F942C49B3E30066A996 /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		D94A1F982C4A31C50066A996 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D94A1F9A2C4A31D50066A996 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		D94A1F9C2C4A31FE0066A996 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		D94A1F9E2C4A39E00066A996 /* ProifleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProifleViewController.swift; sourceTree = "<group>"; };
+		D94A1FA12C4A3A000066A996 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		D97AC9B82C4A3C0500CB9EEA /* BoatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatListViewController.swift; sourceTree = "<group>"; };
+		D97AC9BA2C4A3C2700CB9EEA /* BoatListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatListCoordinator.swift; sourceTree = "<group>"; };
+		D97AC9BD2C4C44D000CB9EEA /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		D97AC9C02C51060900CB9EEA /* AdminPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPageViewController.swift; sourceTree = "<group>"; };
+		D97AC9C22C51061E00CB9EEA /* AdminPageCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPageCoordinator.swift; sourceTree = "<group>"; };
+		D97AC9C42C51062900CB9EEA /* AdminPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPageViewModel.swift; sourceTree = "<group>"; };
+		D97AC9C92C52239A00CB9EEA /* CreateBoatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBoatViewController.swift; sourceTree = "<group>"; };
+		D97AC9CB2C5223A800CB9EEA /* CreateBoatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBoatViewModel.swift; sourceTree = "<group>"; };
+		D97AC9CD2C5223B400CB9EEA /* CreateBoatCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBoatCoordinator.swift; sourceTree = "<group>"; };
+		D97AC9CF2C5226BF00CB9EEA /* AdminInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminInfoViewController.swift; sourceTree = "<group>"; };
+		D97AC9D12C5226CF00CB9EEA /* AdminInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminInfoViewModel.swift; sourceTree = "<group>"; };
+		D97AC9D32C5226DB00CB9EEA /* AdminInfoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminInfoCoordinator.swift; sourceTree = "<group>"; };
+		D97AC9D52C5227AC00CB9EEA /* AdminBoatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminBoatListViewController.swift; sourceTree = "<group>"; };
+		D97AC9D72C5227BC00CB9EEA /* AdminBoatListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminBoatListViewModel.swift; sourceTree = "<group>"; };
+		D97AC9D92C5227C600CB9EEA /* AdminBoatListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminBoatListCoordinator.swift; sourceTree = "<group>"; };
+		D9B58B832C6E22F200698B10 /* AdminBoatListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminBoatListTableViewCell.swift; sourceTree = "<group>"; };
+		D9B58B842C6E22F200698B10 /* AdminBoatListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdminBoatListTableViewCell.xib; sourceTree = "<group>"; };
+		D9B58B8B2C70D5EC00698B10 /* AdminBoatListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminBoatListDetailViewController.swift; sourceTree = "<group>"; };
+		D9B58B8D2C70D77F00698B10 /* AdminBoatListDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminBoatListDetailCoordinator.swift; sourceTree = "<group>"; };
+		D9B58B8F2C70D79C00698B10 /* AdminBoatListDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminBoatListDetailViewModel.swift; sourceTree = "<group>"; };
+		D9B58B932C70D7FA00698B10 /* AdminBoatListDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminBoatListDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		D9B58B942C70D7FA00698B10 /* AdminBoatListDetailCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdminBoatListDetailCollectionViewCell.xib; sourceTree = "<group>"; };
+		D9B58B972C70DE6400698B10 /* BoatInformationDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatInformationDetailList.swift; sourceTree = "<group>"; };
+		EBEE1EE9B95542A8E8501857 /* Pods-boatsaily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-boatsaily.debug.xcconfig"; path = "Target Support Files/Pods-boatsaily/Pods-boatsaily.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +131,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A08E6B5C2A4C7C73482A5852 /* Pods_boatsaily.framework in Frameworks */,
+				D9B58B892C70D0C400698B10 /* ImageSlideshow in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +153,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF9C91A6D34D6571BCE51064 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				458F8ABE6534B01F2EBCA198 /* Pods_boatsaily.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D907C69A2C54E41C00DA6862 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D907C69B2C54E42E00DA6862 /* BoatInformationList.swift */,
+				D9B58B972C70DE6400698B10 /* BoatInformationDetailList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D933401E2C56339A00645AF7 /* CreateBoatCustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				D933401F2C5633C800645AF7 /* CreateBoatCollectionViewCell.swift */,
+				D93340202C5633C800645AF7 /* CreateBoatCollectionViewCell.xib */,
+			);
+			name = CreateBoatCustomCells;
+			sourceTree = "<group>";
+		};
+		D93340232C56751600645AF7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D93340242C56753E00645AF7 /* Proxima Nova Font.otf */,
+				D93340262C56753E00645AF7 /* Proxima-Nova-Bold.otf */,
+				D93340252C56753E00645AF7 /* Proxima-Nova-Semibold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		D94A1F4E2C49A6920066A996 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +196,8 @@
 				D94A1F702C49A6940066A996 /* boatsailyTests */,
 				D94A1F7A2C49A6940066A996 /* boatsailyUITests */,
 				D94A1F582C49A6920066A996 /* Products */,
+				F4FC3B5EE204C39400C4457A /* Pods */,
+				CF9C91A6D34D6571BCE51064 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +214,12 @@
 		D94A1F592C49A6920066A996 /* boatsaily */ = {
 			isa = PBXGroup;
 			children = (
+				D93340232C56751600645AF7 /* Fonts */,
+				D907C69A2C54E41C00DA6862 /* Models */,
+				D97AC9BC2C4C43FF00CB9EEA /* Scenes */,
+				D94A1F962C4A30370066A996 /* Protocols */,
 				D94A1F5A2C49A6920066A996 /* AppDelegate.swift */,
-				D94A1F5C2C49A6920066A996 /* SceneDelegate.swift */,
-				D94A1F5E2C49A6920066A996 /* ViewController.swift */,
+				D94A1F8E2C49AF550066A996 /* TabBarViewController.swift */,
 				D94A1F602C49A6920066A996 /* Main.storyboard */,
 				D94A1F632C49A6930066A996 /* Assets.xcassets */,
 				D94A1F652C49A6930066A996 /* LaunchScreen.storyboard */,
@@ -127,6 +245,139 @@
 			path = boatsailyUITests;
 			sourceTree = "<group>";
 		};
+		D94A1F962C4A30370066A996 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D94A1F942C49B3E30066A996 /* Storyboarded.swift */,
+				D94A1F902C49B1850066A996 /* Coordinator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D94A1F972C4A319A0066A996 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D97AC9B62C4A3BB300CB9EEA /* BoatList */,
+				D94A1F982C4A31C50066A996 /* HomeViewController.swift */,
+				D94A1F9A2C4A31D50066A996 /* HomeCoordinator.swift */,
+				D94A1F9C2C4A31FE0066A996 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D94A1FA02C4A39E90066A996 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D94A1F9E2C4A39E00066A996 /* ProifleViewController.swift */,
+				D94A1FA12C4A3A000066A996 /* ProfileCoordinator.swift */,
+				D97AC9BD2C4C44D000CB9EEA /* ProfileViewModel.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		D97AC9B62C4A3BB300CB9EEA /* BoatList */ = {
+			isa = PBXGroup;
+			children = (
+				D97AC9B82C4A3C0500CB9EEA /* BoatListViewController.swift */,
+				D97AC9BA2C4A3C2700CB9EEA /* BoatListCoordinator.swift */,
+			);
+			path = BoatList;
+			sourceTree = "<group>";
+		};
+		D97AC9BC2C4C43FF00CB9EEA /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				D94A1F972C4A319A0066A996 /* Home */,
+				D94A1FA02C4A39E90066A996 /* Profile */,
+				D97AC9BF2C5105E500CB9EEA /* Admin */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		D97AC9BF2C5105E500CB9EEA /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				D97AC9C82C5222B400CB9EEA /* AdminBoatList */,
+				D97AC9C72C5222AB00CB9EEA /* AdminInfo */,
+				D97AC9C62C52226E00CB9EEA /* CreateBoat */,
+				D97AC9C02C51060900CB9EEA /* AdminPageViewController.swift */,
+				D97AC9C22C51061E00CB9EEA /* AdminPageCoordinator.swift */,
+				D97AC9C42C51062900CB9EEA /* AdminPageViewModel.swift */,
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
+		D97AC9C62C52226E00CB9EEA /* CreateBoat */ = {
+			isa = PBXGroup;
+			children = (
+				D933401E2C56339A00645AF7 /* CreateBoatCustomCells */,
+				D97AC9C92C52239A00CB9EEA /* CreateBoatViewController.swift */,
+				D97AC9CB2C5223A800CB9EEA /* CreateBoatViewModel.swift */,
+				D97AC9CD2C5223B400CB9EEA /* CreateBoatCoordinator.swift */,
+			);
+			name = CreateBoat;
+			sourceTree = "<group>";
+		};
+		D97AC9C72C5222AB00CB9EEA /* AdminInfo */ = {
+			isa = PBXGroup;
+			children = (
+				D97AC9CF2C5226BF00CB9EEA /* AdminInfoViewController.swift */,
+				D97AC9D12C5226CF00CB9EEA /* AdminInfoViewModel.swift */,
+				D97AC9D32C5226DB00CB9EEA /* AdminInfoCoordinator.swift */,
+			);
+			name = AdminInfo;
+			sourceTree = "<group>";
+		};
+		D97AC9C82C5222B400CB9EEA /* AdminBoatList */ = {
+			isa = PBXGroup;
+			children = (
+				D9B58B8A2C70D57300698B10 /* AdminBoatListDetail */,
+				D9A90FE52C5FB903001AF40B /* AdminBoatListTableViewCells */,
+				D97AC9D52C5227AC00CB9EEA /* AdminBoatListViewController.swift */,
+				D97AC9D72C5227BC00CB9EEA /* AdminBoatListViewModel.swift */,
+				D97AC9D92C5227C600CB9EEA /* AdminBoatListCoordinator.swift */,
+			);
+			name = AdminBoatList;
+			sourceTree = "<group>";
+		};
+		D9A90FE52C5FB903001AF40B /* AdminBoatListTableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				D9B58B832C6E22F200698B10 /* AdminBoatListTableViewCell.swift */,
+				D9B58B842C6E22F200698B10 /* AdminBoatListTableViewCell.xib */,
+			);
+			name = AdminBoatListTableViewCells;
+			sourceTree = "<group>";
+		};
+		D9B58B8A2C70D57300698B10 /* AdminBoatListDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D9B58B912C70D7C000698B10 /* AdminBoatListDetailCustomCells */,
+				D9B58B8B2C70D5EC00698B10 /* AdminBoatListDetailViewController.swift */,
+				D9B58B8D2C70D77F00698B10 /* AdminBoatListDetailCoordinator.swift */,
+				D9B58B8F2C70D79C00698B10 /* AdminBoatListDetailViewModel.swift */,
+			);
+			name = AdminBoatListDetail;
+			sourceTree = "<group>";
+		};
+		D9B58B912C70D7C000698B10 /* AdminBoatListDetailCustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				D9B58B932C70D7FA00698B10 /* AdminBoatListDetailCollectionViewCell.swift */,
+				D9B58B942C70D7FA00698B10 /* AdminBoatListDetailCollectionViewCell.xib */,
+			);
+			name = AdminBoatListDetailCustomCells;
+			sourceTree = "<group>";
+		};
+		F4FC3B5EE204C39400C4457A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBEE1EE9B95542A8E8501857 /* Pods-boatsaily.debug.xcconfig */,
+				090906C3DD9D030C7D21F04E /* Pods-boatsaily.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,15 +385,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D94A1F812C49A6940066A996 /* Build configuration list for PBXNativeTarget "boatsaily" */;
 			buildPhases = (
+				CA28EA1F37AE459F702F9CB3 /* [CP] Check Pods Manifest.lock */,
 				D94A1F532C49A6920066A996 /* Sources */,
 				D94A1F542C49A6920066A996 /* Frameworks */,
-				D94A1F552C49A6920066A996 /* Resources */,
+				9E65321923FF81843119B30C /* [CP] Embed Pods Frameworks */,
+				D9DDFB1C2C551EC00066C4DE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = boatsaily;
+			packageProductDependencies = (
+				D9B58B882C70D0C400698B10 /* ImageSlideshow */,
+			);
 			productName = boatsaily;
 			productReference = D94A1F572C49A6920066A996 /* boatsaily.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +471,9 @@
 				Base,
 			);
 			mainGroup = D94A1F4E2C49A6920066A996;
+			packageReferences = (
+				D9B58B872C70D06200698B10 /* XCRemoteSwiftPackageReference "ImageSlideshow" */,
+			);
 			productRefGroup = D94A1F582C49A6920066A996 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -227,16 +486,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D94A1F552C49A6920066A996 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D94A1F672C49A6930066A996 /* LaunchScreen.storyboard in Resources */,
-				D94A1F642C49A6930066A996 /* Assets.xcassets in Resources */,
-				D94A1F622C49A6920066A996 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D94A1F6B2C49A6940066A996 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -251,16 +500,103 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D9DDFB1C2C551EC00066C4DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D93340222C5633C800645AF7 /* CreateBoatCollectionViewCell.xib in Resources */,
+				D93340272C56753E00645AF7 /* Proxima Nova Font.otf in Resources */,
+				D93340282C56753E00645AF7 /* Proxima-Nova-Semibold.ttf in Resources */,
+				D9DDFB1F2C551ED60066C4DE /* Assets.xcassets in Resources */,
+				D93340292C56753E00645AF7 /* Proxima-Nova-Bold.otf in Resources */,
+				D9B58B862C6E22F200698B10 /* AdminBoatListTableViewCell.xib in Resources */,
+				D9DDFB1E2C551ED20066C4DE /* LaunchScreen.storyboard in Resources */,
+				D9B58B962C70D7FA00698B10 /* AdminBoatListDetailCollectionViewCell.xib in Resources */,
+				D9DDFB1D2C551ECB0066C4DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9E65321923FF81843119B30C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-boatsaily/Pods-boatsaily-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-boatsaily/Pods-boatsaily-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-boatsaily/Pods-boatsaily-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA28EA1F37AE459F702F9CB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-boatsaily-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D94A1F532C49A6920066A996 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D94A1F5F2C49A6920066A996 /* ViewController.swift in Sources */,
+				D9B58B8E2C70D77F00698B10 /* AdminBoatListDetailCoordinator.swift in Sources */,
+				D9A90FEB2C6096AF001AF40B /* AdminBoatListViewController.swift in Sources */,
+				D97AC9D22C5226CF00CB9EEA /* AdminInfoViewModel.swift in Sources */,
+				D9B58B952C70D7FA00698B10 /* AdminBoatListDetailCollectionViewCell.swift in Sources */,
+				D97AC9D42C5226DB00CB9EEA /* AdminInfoCoordinator.swift in Sources */,
+				D97AC9DA2C5227C600CB9EEA /* AdminBoatListCoordinator.swift in Sources */,
+				D94A1F992C4A31C50066A996 /* HomeViewController.swift in Sources */,
+				D94A1F912C49B1850066A996 /* Coordinator.swift in Sources */,
+				D97AC9CA2C52239A00CB9EEA /* CreateBoatViewController.swift in Sources */,
+				D97AC9C12C51060900CB9EEA /* AdminPageViewController.swift in Sources */,
+				D94A1F9D2C4A31FE0066A996 /* HomeViewModel.swift in Sources */,
+				D97AC9C52C51062900CB9EEA /* AdminPageViewModel.swift in Sources */,
+				D97AC9CE2C5223B400CB9EEA /* CreateBoatCoordinator.swift in Sources */,
 				D94A1F5B2C49A6920066A996 /* AppDelegate.swift in Sources */,
-				D94A1F5D2C49A6920066A996 /* SceneDelegate.swift in Sources */,
+				D97AC9C32C51061E00CB9EEA /* AdminPageCoordinator.swift in Sources */,
+				D94A1F8F2C49AF550066A996 /* TabBarViewController.swift in Sources */,
+				D9B58B852C6E22F200698B10 /* AdminBoatListTableViewCell.swift in Sources */,
+				D9B58B8C2C70D5EC00698B10 /* AdminBoatListDetailViewController.swift in Sources */,
+				D907C69C2C54E42E00DA6862 /* BoatInformationList.swift in Sources */,
+				D97AC9BE2C4C44D000CB9EEA /* ProfileViewModel.swift in Sources */,
+				D97AC9D82C5227BC00CB9EEA /* AdminBoatListViewModel.swift in Sources */,
+				D9B58B982C70DE6400698B10 /* BoatInformationDetailList.swift in Sources */,
+				D94A1F952C49B3E30066A996 /* Storyboarded.swift in Sources */,
+				D97AC9CC2C5223A800CB9EEA /* CreateBoatViewModel.swift in Sources */,
+				D9A90FEC2C60986B001AF40B /* BoatListCoordinator.swift in Sources */,
+				D9B58B902C70D79C00698B10 /* AdminBoatListDetailViewModel.swift in Sources */,
+				D97AC9B92C4A3C0500CB9EEA /* BoatListViewController.swift in Sources */,
+				D94A1F9F2C4A39E00066A996 /* ProifleViewController.swift in Sources */,
+				D94A1FA22C4A3A000066A996 /* ProfileCoordinator.swift in Sources */,
+				D94A1F9B2C4A31D50066A996 /* HomeCoordinator.swift in Sources */,
+				D93340212C5633C800645AF7 /* CreateBoatCollectionViewCell.swift in Sources */,
+				D97AC9D02C5226BF00CB9EEA /* AdminInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +689,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -416,7 +752,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -437,6 +773,7 @@
 		};
 		D94A1F822C49A6940066A996 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBEE1EE9B95542A8E8501857 /* Pods-boatsaily.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -445,6 +782,7 @@
 				DEVELOPMENT_TEAM = K4CHZT3Z5F;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = boatsaily/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To use in this app please give permission";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -465,6 +803,7 @@
 		};
 		D94A1F832C49A6940066A996 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 090906C3DD9D030C7D21F04E /* Pods-boatsaily.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -473,6 +812,7 @@
 				DEVELOPMENT_TEAM = K4CHZT3Z5F;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = boatsaily/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To use in this app please give permission";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -607,6 +947,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D9B58B872C70D06200698B10 /* XCRemoteSwiftPackageReference "ImageSlideshow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/zvonicek/ImageSlideshow.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D9B58B882C70D0C400698B10 /* ImageSlideshow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D9B58B872C70D06200698B10 /* XCRemoteSwiftPackageReference "ImageSlideshow" */;
+			productName = ImageSlideshow;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D94A1F4F2C49A6920066A996 /* Project object */;
 }

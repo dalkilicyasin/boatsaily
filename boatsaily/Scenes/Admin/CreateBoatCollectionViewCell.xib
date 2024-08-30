@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CreateBoatCollectionViewCell" id="gTV-IL-0wX" customClass="CreateBoatCollectionViewCell" customModule="boatsaily" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="301" height="186"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="301" height="186"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ve-Jx-SFG">
+                        <rect key="frame" x="0.0" y="0.0" width="301" height="186"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addphoto" translatesAutoresizingMaskIntoConstraints="NO" id="a20-X4-gOm">
+                                <rect key="frame" x="0.0" y="0.0" width="301" height="186"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="a20-X4-gOm" secondAttribute="bottom" id="DJ1-6M-rVo"/>
+                            <constraint firstItem="a20-X4-gOm" firstAttribute="leading" secondItem="4ve-Jx-SFG" secondAttribute="leading" id="JFu-oZ-DLM"/>
+                            <constraint firstItem="a20-X4-gOm" firstAttribute="top" secondItem="4ve-Jx-SFG" secondAttribute="top" id="YLA-LK-e6h"/>
+                            <constraint firstAttribute="trailing" secondItem="a20-X4-gOm" secondAttribute="trailing" id="z26-93-OW7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="4ve-Jx-SFG" secondAttribute="trailing" id="12D-1X-pc3"/>
+                <constraint firstItem="4ve-Jx-SFG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2BQ-tg-XhG"/>
+                <constraint firstAttribute="bottom" secondItem="4ve-Jx-SFG" secondAttribute="bottom" id="qk8-QO-Xzg"/>
+                <constraint firstItem="4ve-Jx-SFG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zJh-qh-C1E"/>
+            </constraints>
+            <size key="customSize" width="301" height="186"/>
+            <connections>
+                <outlet property="addImageTopView" destination="4ve-Jx-SFG" id="6VA-ZB-65j"/>
+                <outlet property="addImageView" destination="a20-X4-gOm" id="e1n-Fy-llO"/>
+            </connections>
+            <point key="canvasLocation" x="295.41984732824426" y="67.605633802816911"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="addphoto" width="360" height="360"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
