@@ -1,0 +1,123 @@
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "0C4-Xq-fkg"; */
+"0C4-Xq-fkg.configuration.title" = "Giriş Yap";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "0C4-Xq-fkg"; */
+"0C4-Xq-fkg.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "2Pi-c1-WcL"; */
+"2Pi-c1-WcL.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Arrived Time"; ObjectID = "6wk-No-iU5"; */
+"6wk-No-iU5.placeholder" = "Varış Zamanı";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "72o-GH-gd3"; */
+"72o-GH-gd3.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Town"; ObjectID = "82s-4F-RY1"; */
+"82s-4F-RY1.placeholder" = "İlçe";
+
+/* Class = "UITextField"; placeholder = "enter email address"; ObjectID = "8th-cu-Tz4"; */
+"8th-cu-Tz4.placeholder" = "Email Adresini Giriniz";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "BML-7q-L6D"; */
+"BML-7q-L6D.title" = "Ana Sayfa";
+
+/* Class = "UIButton"; configuration.title = "Add Image"; ObjectID = "H44-D5-tJt"; */
+"H44-D5-tJt.configuration.title" = "Resim Ekle";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "H44-D5-tJt"; */
+"H44-D5-tJt.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "HjQ-tB-BmF"; */
+"HjQ-tB-BmF.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Remove Image"; ObjectID = "Lhn-Gl-nVc"; */
+"Lhn-Gl-nVc.configuration.title" = "Resim Kaldır";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Lhn-Gl-nVc"; */
+"Lhn-Gl-nVc.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Create Boat"; ObjectID = "MRB-pN-mCt"; */
+"MRB-pN-mCt.configuration.title" = "Tekne Listesi Oluştur";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "MRB-pN-mCt"; */
+"MRB-pN-mCt.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "City"; ObjectID = "OuT-SK-XMB"; */
+"OuT-SK-XMB.placeholder" = "Şehir";
+
+/* Class = "UIButton"; configuration.title = "Register"; ObjectID = "RIu-M0-n98"; */
+"RIu-M0-n98.configuration.title" = "Kayıt Ol";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "RIu-M0-n98"; */
+"RIu-M0-n98.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Filter"; ObjectID = "SUm-oK-zKS"; */
+"SUm-oK-zKS.configuration.title" = "Filtrele";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "SUm-oK-zKS"; */
+"SUm-oK-zKS.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Departure Time"; ObjectID = "Z1W-Rn-DoI"; */
+"Z1W-Rn-DoI.placeholder" = "Varış Zamanı";
+
+/* Class = "UITextField"; placeholder = "Tour Name"; ObjectID = "Z3E-rv-59a"; */
+"Z3E-rv-59a.placeholder" = "Tur İsmi";
+
+/* Class = "UIButton"; configuration.title = "My BoatList"; ObjectID = "a2S-Ig-zVD"; */
+"a2S-Ig-zVD.configuration.title" = "Tekne Listem";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "a2S-Ig-zVD"; */
+"a2S-Ig-zVD.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Continue Without Login"; ObjectID = "dh3-et-JBH"; */
+"dh3-et-JBH.configuration.title" = "Giriş Yapmadan Devam Et";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "dh3-et-JBH"; */
+"dh3-et-JBH.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "gFQ-OX-Yws"; */
+"gFQ-OX-Yws.title" = "Profil";
+
+/* Class = "UITextField"; placeholder = "enter password"; ObjectID = "igO-Qj-mGE"; */
+"igO-Qj-mGE.placeholder" = "Şifre Gir";
+
+/* Class = "UITextField"; placeholder = "Extras"; ObjectID = "jHZ-nG-mGb"; */
+"jHZ-nG-mGb.placeholder" = "Extralar";
+
+/* Class = "UILabel"; text = "ViewController"; ObjectID = "jdO-aj-Ad2"; */
+"jdO-aj-Ad2.text" = "ViewController";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "lUi-Ov-YfP"; */
+"lUi-Ov-YfP.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "My Informations"; ObjectID = "mAb-79-oyX"; */
+"mAb-79-oyX.configuration.title" = "Bilgilerim";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "mAb-79-oyX"; */
+"mAb-79-oyX.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "NavigatetoBoatList"; ObjectID = "mcA-5k-Rwu"; */
+"mcA-5k-Rwu.configuration.title" = "NavigatetoBoatList";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "mcA-5k-Rwu"; */
+"mcA-5k-Rwu.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Save"; ObjectID = "mwa-CJ-EHO"; */
+"mwa-CJ-EHO.configuration.title" = "Kaydet";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "mwa-CJ-EHO"; */
+"mwa-CJ-EHO.normalTitle" = "Button";
+
+/* Class = "UITextView"; text = "Please give information about tour rote"; ObjectID = "ozp-6F-NLf"; */
+"ozp-6F-NLf.text" = "Lütfen tekne rotası hakkında bilgiler verin.";
+
+/* Class = "UILabel"; text = "DetailVc"; ObjectID = "sc6-Vi-PL5"; */
+"sc6-Vi-PL5.text" = "DetailVc";
+
+/* Class = "UILabel"; text = "Please enter your login informations"; ObjectID = "xuv-Za-PM7"; */
+"xuv-Za-PM7.text" = "Please enter your login informations";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "yTd-EH-Gci"; */
+"yTd-EH-Gci.text" = "Label";

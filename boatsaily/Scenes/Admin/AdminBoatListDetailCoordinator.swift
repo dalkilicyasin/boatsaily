@@ -27,7 +27,7 @@ class AdminBoatListDetailCoordinator: Coordinator {
     
     func start() {
         let controller = AdminBoatListDetailViewController.instantiate(name: .main)
-        controller.viewModel.tourName = self.tourName ?? ""
+        controller.viewModel.tourName = self.tourName 
         controller.coordinator = self
         self.navigationController.pushViewController(controller, animated: true)
     }

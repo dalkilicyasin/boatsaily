@@ -12,6 +12,9 @@
         <array key="Proxima Nova Font.otf">
             <string>ProximaNova-Regular</string>
         </array>
+        <array key="Proxima-Nova-Semibold.ttf">
+            <string>ProximaNova-Semibold</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Home-->
@@ -22,40 +25,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdO-aj-Ad2">
-                                <rect key="frame" x="87.666666666666686" y="381" width="200" height="50"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="kOc-aE-he2">
+                                <rect key="frame" x="20" y="150" width="335" height="210"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Select City" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oYG-8g-LQU">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="SuV-az-uRN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Select Town" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BKL-Ez-ICw">
+                                        <rect key="frame" x="0.0" y="80" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="qd2-8Y-F44"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Select Tour Date" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7aW-ab-Npb">
+                                        <rect key="frame" x="0.0" y="160" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="mLM-kc-eve"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6d-Ni-EQf">
+                                <rect key="frame" x="20" y="410" width="335" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Bx5-xk-f7c"/>
-                                    <constraint firstAttribute="width" constant="200" id="XpA-Fj-utT"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcA-5k-Rwu">
-                                <rect key="frame" x="87.666666666666686" y="150" width="200" height="50"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="OIC-vC-yf4"/>
-                                    <constraint firstAttribute="height" constant="50" id="QBY-2S-uJU"/>
+                                    <constraint firstAttribute="height" constant="50" id="bDj-if-Pqr"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="NavigatetoBoatList"/>
-                                <connections>
-                                    <action selector="toBoatList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H0a-xW-iEa"/>
-                                </connections>
+                                <buttonConfiguration key="configuration" style="filled" title="Find Tour">
+                                    <fontDescription key="titleFontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="17"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                </buttonConfiguration>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="mcA-5k-Rwu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="KEz-os-7sm"/>
-                            <constraint firstItem="mcA-5k-Rwu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="edO-JK-utF"/>
-                            <constraint firstItem="jdO-aj-Ad2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hCT-R2-ItI"/>
-                            <constraint firstItem="jdO-aj-Ad2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wgf-SR-bZU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kOc-aE-he2" secondAttribute="trailing" constant="20" id="DR1-c8-Yoc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G6d-Ni-EQf" secondAttribute="trailing" constant="20" id="Nyd-Kr-DM8"/>
+                            <constraint firstItem="G6d-Ni-EQf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ykw-im-RPL"/>
+                            <constraint firstItem="kOc-aE-he2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fJW-fG-0oX"/>
+                            <constraint firstItem="kOc-aE-he2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="k7R-eY-UND"/>
+                            <constraint firstItem="G6d-Ni-EQf" firstAttribute="top" secondItem="kOc-aE-he2" secondAttribute="bottom" constant="50" id="yjG-XE-uQ7"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="BML-7q-L6D"/>
+                    <connections>
+                        <outlet property="selectCityLabel" destination="oYG-8g-LQU" id="pDo-JZ-Hzb"/>
+                        <outlet property="selectDateLabel" destination="7aW-ab-Npb" id="P5r-AU-PSn"/>
+                        <outlet property="selectTownLabel" destination="BKL-Ez-ICw" id="0Xv-pn-FUU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -538,7 +565,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KFv-jA-CS9">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KFv-jA-CS9">
                                 <rect key="frame" x="0.0" y="60" width="375" height="200"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -557,27 +584,75 @@
                                 </connections>
                             </collectionView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="BPx-jy-50V">
-                                <rect key="frame" x="87.666666666666686" y="280" width="200" height="26"/>
+                                <rect key="frame" x="87.666666666666686" y="280" width="200" height="25.666666666666686"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="25.670000000000002" id="OW5-hG-TSL"/>
                                     <constraint firstAttribute="width" constant="200" id="QOq-gx-IyE"/>
                                 </constraints>
                                 <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </pageControl>
+                            <stackView opaque="NO" tag="20" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YFc-KX-uDD">
+                                <rect key="frame" x="20" y="355.66666666666674" width="335" height="322.33333333333326"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Pi-c1-WcL">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="17"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72o-GH-gd3">
+                                        <rect key="frame" x="0.0" y="17.000000000000014" width="335" height="251.33333333333337"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUi-Ov-YfP">
+                                        <rect key="frame" x="0.0" y="268.33333333333331" width="335" height="17"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTd-EH-Gci">
+                                        <rect key="frame" x="0.0" y="285.33333333333331" width="335" height="17"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjQ-tB-BmF">
+                                        <rect key="frame" x="0.0" y="302.33333333333331" width="335" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="c4M-th-Vas"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lYp-rA-8ZY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="YFc-KX-uDD" firstAttribute="leading" secondItem="lYp-rA-8ZY" secondAttribute="leading" constant="20" id="F8v-am-KIZ"/>
                             <constraint firstItem="BPx-jy-50V" firstAttribute="top" secondItem="KFv-jA-CS9" secondAttribute="bottom" constant="20" id="Ub5-ah-xUD"/>
                             <constraint firstItem="KFv-jA-CS9" firstAttribute="leading" secondItem="lYp-rA-8ZY" secondAttribute="leading" id="YYQ-MF-Vlz"/>
+                            <constraint firstItem="lYp-rA-8ZY" firstAttribute="bottom" secondItem="YFc-KX-uDD" secondAttribute="bottom" constant="100" id="dpr-EY-eKH"/>
                             <constraint firstItem="BPx-jy-50V" firstAttribute="centerX" secondItem="3oy-8a-FAk" secondAttribute="centerX" id="efb-2N-SSZ"/>
                             <constraint firstItem="lYp-rA-8ZY" firstAttribute="trailing" secondItem="KFv-jA-CS9" secondAttribute="trailing" id="hSM-GN-cxv"/>
                             <constraint firstItem="KFv-jA-CS9" firstAttribute="top" secondItem="lYp-rA-8ZY" secondAttribute="top" constant="10" id="lUM-yG-dci"/>
+                            <constraint firstItem="lYp-rA-8ZY" firstAttribute="trailing" secondItem="YFc-KX-uDD" secondAttribute="trailing" constant="20" id="ogQ-AC-90l"/>
+                            <constraint firstItem="YFc-KX-uDD" firstAttribute="top" secondItem="BPx-jy-50V" secondAttribute="bottom" constant="50" id="vQQ-2S-bX2"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="arrivedTimeLabel" destination="yTd-EH-Gci" id="jH6-dp-fSK"/>
+                        <outlet property="cityLabel" destination="72o-GH-gd3" id="IBc-Yf-5PE"/>
                         <outlet property="collectionView" destination="KFv-jA-CS9" id="C3h-G1-d9l"/>
+                        <outlet property="departureTimeLabel" destination="HjQ-tB-BmF" id="piN-De-mx9"/>
                         <outlet property="pageControl" destination="BPx-jy-50V" id="rdD-NW-Ge4"/>
+                        <outlet property="tourNameLabel" destination="2Pi-c1-WcL" id="5an-I9-t7I"/>
+                        <outlet property="townLabel" destination="lUi-Ov-YfP" id="VN0-v0-j4S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qmb-DY-SrS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -594,11 +669,11 @@
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
