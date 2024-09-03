@@ -33,8 +33,10 @@ class HomeCoordinator: Coordinator {
     func navigateTo(to route: HomeRoute, with data: Any?) {
         switch route {
         case .toDetail:
-            let detailVC = AdminBoatListCoordinator(navigationController: navigationController)
-            detailVC.start()
+            if let data = data as? BoatInformationDetailList {
+                let detailVC = BoatListCoordinator(navigationController: self.navigationController, boatInformationDetailList: data )
+                detailVC.start()
+            }
         }
     }
     

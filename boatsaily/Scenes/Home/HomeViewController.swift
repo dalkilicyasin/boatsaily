@@ -36,8 +36,8 @@ class HomeViewController: UIViewController, Storyboarded {
         super.viewDidLoad()
         
         self.navigationItem.title = "Home"
+        
         // Do any additional setup after loading the view.
-    
         selectDateLabel.textAlignment = .center
         selectCityLabel.textAlignment = .center
         selectTownLabel.textAlignment = .center
@@ -68,15 +68,12 @@ class HomeViewController: UIViewController, Storyboarded {
         toolBarCustomPicker.setItems([doneButtonCustomPicker], animated: true)
 
         //Custom Picker
-        
         selectCityLabel.inputAccessoryView = toolBarCustomPicker
         selectCityLabel.inputView = customCityPicker
         
         selectTownLabel.inputAccessoryView = toolBarCustomPicker
         selectTownLabel.inputView = customTownPicker
     
-        
-        
         //Date Picker
         selectDateLabel.inputAccessoryView = toolBarDatePicker
         selectDateLabel.inputView = datePicker
@@ -104,12 +101,16 @@ class HomeViewController: UIViewController, Storyboarded {
         }else {
             selectTownLabel.text = "\(viewModel.selectedTown)"
         }
-        
-        
-        
         self.view.endEditing(true)
     }
     
+    @IBAction func tappedFindButton() {
+        var boatInformationDetailList = BoatInformationDetailList()
+        boatInformationDetailList.city = self.selectCityLabel.text ?? ""
+        boatInformationDetailList.town = self.selectTownLabel.text ?? ""
+        boatInformationDetailList.tourDate = self.selectDateLabel.text ?? ""
+        self.coordinator?.navigateTo(to: .toDetail, with: boatInformationDetailList)
+    }
 }
 
 
@@ -122,7 +123,6 @@ extension HomeViewController: UIPickerViewDelegate, UIPickerViewDataSource {
             viewModel.selectedTag = 1
             return self.viewModel.townList.count
         }
-       
     }
     
     
@@ -131,7 +131,6 @@ extension HomeViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        
         if pickerView.tag == 0 {
             self.viewModel.selectedCity = self.viewModel.cityList[row]
             return self.viewModel.cityList[row]
@@ -139,7 +138,6 @@ extension HomeViewController: UIPickerViewDelegate, UIPickerViewDataSource {
             self.viewModel.selectedTown = self.viewModel.townList[row]
             return self.viewModel.townList[row]
         }
-       
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -148,7 +146,5 @@ extension HomeViewController: UIPickerViewDelegate, UIPickerViewDataSource {
         }else {
             self.selectTownLabel.text = "\(self.viewModel.townList[row])"
         }
-       
     }
-    
 }

@@ -64,6 +64,9 @@
                                     <fontDescription key="titleFontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="17"/>
                                     <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tappedFindButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="cQ5-BA-nnl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -175,10 +178,10 @@
             </objects>
             <point key="canvasLocation" x="2317" y="737"/>
         </scene>
-        <!--View Controller-->
+        <!--Boat List View Controller-->
         <scene sceneID="aZc-7k-C0V">
             <objects>
-                <viewController id="c61-KD-s5h" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BoatListViewController" id="c61-KD-s5h" customClass="BoatListViewController" customModule="boatsaily" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0TY-ia-goa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

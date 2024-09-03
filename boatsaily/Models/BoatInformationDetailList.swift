@@ -18,4 +18,5 @@ struct BoatInformationDetailList {
     var destinations: [String] = []
     var notes: String?
     var imageData: [Data] = []
+    var tourDate: String?
 }

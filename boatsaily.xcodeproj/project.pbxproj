@@ -50,6 +50,7 @@
 		D9B58B952C70D7FA00698B10 /* AdminBoatListDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B58B932C70D7FA00698B10 /* AdminBoatListDetailCollectionViewCell.swift */; };
 		D9B58B962C70D7FA00698B10 /* AdminBoatListDetailCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9B58B942C70D7FA00698B10 /* AdminBoatListDetailCollectionViewCell.xib */; };
 		D9B58B982C70DE6400698B10 /* BoatInformationDetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B58B972C70DE6400698B10 /* BoatInformationDetailList.swift */; };
+		D9C43DB52C87921600C172E5 /* BoatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C43DB42C87921600C172E5 /* BoatListViewModel.swift */; };
 		D9DDFB1D2C551ECB0066C4DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94A1F602C49A6920066A996 /* Main.storyboard */; };
 		D9DDFB1E2C551ED20066C4DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94A1F652C49A6930066A996 /* LaunchScreen.storyboard */; };
 		D9DDFB1F2C551ED60066C4DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D94A1F632C49A6930066A996 /* Assets.xcassets */; };
@@ -126,6 +127,7 @@
 		D9B58B932C70D7FA00698B10 /* AdminBoatListDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminBoatListDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		D9B58B942C70D7FA00698B10 /* AdminBoatListDetailCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdminBoatListDetailCollectionViewCell.xib; sourceTree = "<group>"; };
 		D9B58B972C70DE6400698B10 /* BoatInformationDetailList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatInformationDetailList.swift; sourceTree = "<group>"; };
+		D9C43DB42C87921600C172E5 /* BoatListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatListViewModel.swift; sourceTree = "<group>"; };
 		EBEE1EE9B95542A8E8501857 /* Pods-boatsaily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-boatsaily.debug.xcconfig"; path = "Target Support Files/Pods-boatsaily/Pods-boatsaily.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -283,6 +285,7 @@
 			children = (
 				D97AC9B82C4A3C0500CB9EEA /* BoatListViewController.swift */,
 				D97AC9BA2C4A3C2700CB9EEA /* BoatListCoordinator.swift */,
+				D9C43DB42C87921600C172E5 /* BoatListViewModel.swift */,
 			);
 			path = BoatList;
 			sourceTree = "<group>";
@@ -595,6 +598,7 @@
 				D97AC9CC2C5223A800CB9EEA /* CreateBoatViewModel.swift in Sources */,
 				D9A90FEC2C60986B001AF40B /* BoatListCoordinator.swift in Sources */,
 				D9B58B902C70D79C00698B10 /* AdminBoatListDetailViewModel.swift in Sources */,
+				D9C43DB52C87921600C172E5 /* BoatListViewModel.swift in Sources */,
 				D97AC9B92C4A3C0500CB9EEA /* BoatListViewController.swift in Sources */,
 				D94A1F9F2C4A39E00066A996 /* ProifleViewController.swift in Sources */,
 				D94A1FA22C4A3A000066A996 /* ProfileCoordinator.swift in Sources */,
