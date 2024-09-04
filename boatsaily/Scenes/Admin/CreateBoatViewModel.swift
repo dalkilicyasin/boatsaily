@@ -19,6 +19,7 @@ class CreateBoatViewModel {
     public var arrivedTime: String = ""
     public var extras: String = ""
     public var notes: String = ""
+    public var tourDate: String = ""
     public var images: [UIImage] = []
     private var imageDataList: [Data] = []
     
@@ -33,6 +34,7 @@ class CreateBoatViewModel {
         boatInformationList.arrivedTime = self.arrivedTime
         boatInformationList.extras = self.extras
         boatInformationList.notes = self.notes
+        boatInformationList.tourDate = self.tourDate
         
         for item in images {
             if let data = item.jpegData(compressionQuality: 0.7) {

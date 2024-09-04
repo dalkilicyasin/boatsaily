@@ -12,6 +12,8 @@ class BoatListViewController: UIViewController, Storyboarded {
     var coordinator: BoatListCoordinator?
     var viewModel: BoatListViewModel
     
+    @IBOutlet weak var tableView: UITableView!
+    
     public init(viewModel: BoatListViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -27,8 +29,22 @@ class BoatListViewController: UIViewController, Storyboarded {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.navigationItem.title = "Detail"
+        self.navigationItem.title = "Boat List"
         
         self.viewModel.callList()
     }
 }
+
+extension BoatListViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+    
+    
+}
+
+

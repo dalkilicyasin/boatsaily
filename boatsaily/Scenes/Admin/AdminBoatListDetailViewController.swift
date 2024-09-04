@@ -65,9 +65,7 @@ extension AdminBoatListDetailViewController: UICollectionViewDelegate, UICollect
         CGSize(width: self.collectionView.frame.width, height: self.collectionView.frame.height)
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        30
-    }
+   
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         self.pageControl.currentPage = indexPath.row

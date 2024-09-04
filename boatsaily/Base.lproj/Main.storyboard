@@ -186,24 +186,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DetailVc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sc6-Vi-PL5">
-                                <rect key="frame" x="87.666666666666686" y="381" width="200" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="OlJ-8v-U60"/>
-                                    <constraint firstAttribute="width" constant="200" id="eqj-C2-7a6"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qxn-Jb-7hG">
+                                <rect key="frame" x="0.0" y="50" width="375" height="728"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="c61-KD-s5h" id="23M-k3-eGO"/>
+                                    <outlet property="delegate" destination="c61-KD-s5h" id="vNB-m2-8pR"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5O1-lk-m7u"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="sc6-Vi-PL5" firstAttribute="centerY" secondItem="0TY-ia-goa" secondAttribute="centerY" id="pkb-aC-L1c"/>
-                            <constraint firstItem="sc6-Vi-PL5" firstAttribute="centerX" secondItem="0TY-ia-goa" secondAttribute="centerX" id="whj-c0-i8h"/>
+                            <constraint firstItem="qxn-Jb-7hG" firstAttribute="leading" secondItem="5O1-lk-m7u" secondAttribute="leading" id="3GN-Up-nzD"/>
+                            <constraint firstItem="5O1-lk-m7u" firstAttribute="bottom" secondItem="qxn-Jb-7hG" secondAttribute="bottom" id="6LU-5I-lEJ"/>
+                            <constraint firstItem="qxn-Jb-7hG" firstAttribute="top" secondItem="5O1-lk-m7u" secondAttribute="top" id="HDw-8M-xYo"/>
+                            <constraint firstItem="5O1-lk-m7u" firstAttribute="trailing" secondItem="qxn-Jb-7hG" secondAttribute="trailing" id="PoS-gU-Vet"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="qxn-Jb-7hG" id="f3o-Kh-VbE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XSL-pW-5kN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -353,23 +356,28 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Departure Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z1W-Rn-DoI">
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tour Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R0i-F2-7IT">
                                                         <rect key="frame" x="10" y="493" width="353" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Arrived Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6wk-No-iU5">
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Departure Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z1W-Rn-DoI">
                                                         <rect key="frame" x="10" y="548" width="353" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Extras" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jHZ-nG-mGb">
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Arrived Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6wk-No-iU5">
                                                         <rect key="frame" x="10" y="603" width="353" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Extras" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jHZ-nG-mGb">
+                                                        <rect key="frame" x="10" y="658" width="353" height="34"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Please give information about tour rote" translatesAutoresizingMaskIntoConstraints="NO" id="ozp-6F-NLf">
-                                                        <rect key="frame" x="10" y="658" width="353" height="234"/>
+                                                        <rect key="frame" x="10" y="713" width="353" height="179"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="nAS-io-2cp"/>
@@ -458,6 +466,7 @@
                         <outlet property="giveInformationTextView" destination="ozp-6F-NLf" id="a0q-nG-PWV"/>
                         <outlet property="notesText" destination="ozp-6F-NLf" id="Km6-fJ-gxj"/>
                         <outlet property="saveButton" destination="mwa-CJ-EHO" id="YJp-hw-mlM"/>
+                        <outlet property="tourDateTextView" destination="R0i-F2-7IT" id="9xI-KC-ISc"/>
                         <outlet property="tourNameText" destination="Z3E-rv-59a" id="VH1-JE-g59"/>
                         <outlet property="townText" destination="82s-4F-RY1" id="X4j-9a-sAw"/>
                     </connections>
@@ -568,13 +577,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KFv-jA-CS9">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KFv-jA-CS9">
                                 <rect key="frame" x="0.0" y="60" width="375" height="200"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="ueN-uC-RRH"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4oG-H2-LbK">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="4oG-H2-LbK">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>

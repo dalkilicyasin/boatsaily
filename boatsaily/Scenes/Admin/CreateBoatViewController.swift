@@ -23,6 +23,7 @@ class CreateBoatViewController: UIViewController, Storyboarded {
     @IBOutlet weak var arrivedText: UITextField!
     @IBOutlet weak var extrasText: UITextField!
     @IBOutlet weak var notesText: UITextView!
+    @IBOutlet weak var tourDateTextView: UITextField!
     
     var imageList: [UIImage] = []
     var savedImageList: [UIImage] = []
@@ -97,6 +98,7 @@ class CreateBoatViewController: UIViewController, Storyboarded {
         self.viewModel.arrivedTime = self.arrivedText.text ?? ""
         self.viewModel.extras = self.extrasText.text ?? ""
         self.viewModel.notes = self.notesText.text ?? ""
+        self.viewModel.tourDate = self.tourDateTextView.text ?? ""
         self.viewModel.images = self.savedImageList
         
         guard !viewModel.tourName.elementsEqual(""), !self.viewModel.city.elementsEqual(""), !viewModel.images.isEmpty else {

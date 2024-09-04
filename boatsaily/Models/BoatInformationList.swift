@@ -14,6 +14,7 @@ class BoatInformationList: Object, Identifiable {
     @Persisted var title: String?
     @Persisted var city: String?
     @Persisted var town: String?
+    @Persisted var tourDate: String?
     @Persisted var departureTime: String?
     @Persisted var arrivedTime: String?
     @Persisted var extras: String?
