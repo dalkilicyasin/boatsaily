@@ -22,7 +22,7 @@ class BoatListViewModel {
     func filterBoatList(cityName: String, townName: String, date: String) {
         print(self.boatInformationList)
        for item in self.boatInformationList {
-            guard cityName == item.city && townName == item.town && date == item.tourDate else { return}
+            guard cityName == item.city && townName == item.town else { return}
                 self.boatInformation.city = item.city
                 self.boatInformation.town = item.town
                 self.boatInformation.tourName = item.tourName

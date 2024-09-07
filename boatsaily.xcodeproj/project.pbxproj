@@ -287,7 +287,7 @@
 		D97AC9B62C4A3BB300CB9EEA /* BoatList */ = {
 			isa = PBXGroup;
 			children = (
-				D9C43DB62C88D88900C172E5 /* BoatListCustomCell */,
+				D9C43DB62C88D88900C172E5 /* BoatListCustomCells */,
 				D97AC9B82C4A3C0500CB9EEA /* BoatListViewController.swift */,
 				D97AC9BA2C4A3C2700CB9EEA /* BoatListCoordinator.swift */,
 				D9C43DB42C87921600C172E5 /* BoatListViewModel.swift */,
@@ -351,6 +351,22 @@
 			name = AdminBoatList;
 			sourceTree = "<group>";
 		};
+		D97D7C4E2C8B34B200D5B7C7 /* BoatListTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D9C43DB72C88D8BE00C172E5 /* BoatListTableViewCell.swift */,
+				D9C43DB82C88D8BE00C172E5 /* BoatListTableViewCell.xib */,
+			);
+			path = BoatListTableViewCell;
+			sourceTree = "<group>";
+		};
+		D97D7C4F2C8B34C100D5B7C7 /* BoatListCollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BoatListCollectionViewCells;
+			sourceTree = "<group>";
+		};
 		D9A90FE52C5FB903001AF40B /* AdminBoatListTableViewCells */ = {
 			isa = PBXGroup;
 			children = (
@@ -380,13 +396,13 @@
 			name = AdminBoatListDetailCustomCells;
 			sourceTree = "<group>";
 		};
-		D9C43DB62C88D88900C172E5 /* BoatListCustomCell */ = {
+		D9C43DB62C88D88900C172E5 /* BoatListCustomCells */ = {
 			isa = PBXGroup;
 			children = (
-				D9C43DB72C88D8BE00C172E5 /* BoatListTableViewCell.swift */,
-				D9C43DB82C88D8BE00C172E5 /* BoatListTableViewCell.xib */,
+				D97D7C4F2C8B34C100D5B7C7 /* BoatListCollectionViewCells */,
+				D97D7C4E2C8B34B200D5B7C7 /* BoatListTableViewCell */,
 			);
-			path = BoatListCustomCell;
+			path = BoatListCustomCells;
 			sourceTree = "<group>";
 		};
 		F4FC3B5EE204C39400C4457A /* Pods */ = {
@@ -811,6 +827,7 @@
 				DEVELOPMENT_TEAM = K4CHZT3Z5F;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = boatsaily/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "$(PRODUCT_NAME) wants to use for your boatlist please give permission";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To use in this app please give permission";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -841,6 +858,7 @@
 				DEVELOPMENT_TEAM = K4CHZT3Z5F;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = boatsaily/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "$(PRODUCT_NAME) wants to use for your boatlist please give permission";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To use in this app please give permission";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

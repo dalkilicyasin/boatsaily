@@ -9,7 +9,6 @@ import UIKit
 
 class AdminBoatListDetailCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var sliderImageView: UIImageView!
-    @IBOutlet weak var sliderImageMainView: UIView!
 
     static let identifier = "AdminBoatListDetailCollectionViewCell"
 
@@ -21,6 +20,7 @@ class AdminBoatListDetailCollectionViewCell: UICollectionViewCell {
     public func configure(with image: UIImage) {
         
         self.sliderImageView.image = image
+       
      }
     
     static func nib() -> UINib {

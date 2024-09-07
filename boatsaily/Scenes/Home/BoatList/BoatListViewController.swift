@@ -30,21 +30,21 @@ class BoatListViewController: UIViewController, Storyboarded {
 
         // Do any additional setup after loading the view.
         self.navigationItem.title = "Boat List"
-        
         self.viewModel.callList()
+        self.tableView.register(BoatListTableViewCell.nib(), forCellReuseIdentifier: BoatListTableViewCell.identifier)
     }
 }
 
 extension BoatListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return self.viewModel.filteredBoatList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: BoatListTableViewCell.identifier, for: indexPath) as! BoatListTableViewCell
+        cell.configure(model: self.viewModel.filteredBoatList[indexPath.row])
+        return cell
     }
-    
-    
 }
 
 

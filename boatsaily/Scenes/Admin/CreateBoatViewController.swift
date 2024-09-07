@@ -46,6 +46,9 @@ class CreateBoatViewController: UIViewController, Storyboarded {
         super.viewDidLoad()
 
         self.navigationItem.title = "Create Boat"
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        view.addGestureRecognizer(tap)
        
         //collectionView register
         let layout = UICollectionViewFlowLayout()
@@ -61,6 +64,12 @@ class CreateBoatViewController: UIViewController, Storyboarded {
         self.giveInformationTextView.layer.borderWidth = 0.5
         self.giveInformationTextView.layer.borderColor = UIColor.lightGray.cgColor
         self.giveInformationTextView.layer.cornerRadius = 8
+    }
+    
+    //close keyboard
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     
     func showAlert(title: String?, message: String?) {
