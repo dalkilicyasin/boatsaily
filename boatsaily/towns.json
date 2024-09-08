@@ -1,0 +1,206 @@
+{
+  "Turkey": {
+    "cityTowns": [
+      {
+        "city": "Antalya",
+        "towns": [
+          "Akseki",
+          "Aksu",
+          "Alanya",
+          "Demre",
+          "Döşemealtı",
+          "Elmalı",
+          "Finike",
+          "Gazipaşa",
+          "Gündoğmuş",
+          "İbradı",
+          "Kaş",
+          "Kemer",
+          "Kepez",
+          "Konyaaltı",
+          "Korkuteli",
+          "Kumluca",
+          "Manavgat",
+          "Muratpaşa",
+          "Serik"
+        ]
+      },
+      {
+        "city": "Muğla",
+        "towns": [
+          "Bodrum",
+          "Dalaman",
+          "Datça",
+          "Fethiye",
+          "Kavaklıdere",
+          "Köyceğiz",
+          "Marmaris",
+          "Menteşe",
+          "Milas",
+          "Ortaca",
+          "Seydikemer",
+          "Ula",
+          "Yatağan"
+        ]
+      },
+      {
+        "city": "Balıkesir",
+        "towns": [
+          "Altıeylül",
+          "Ayvalık",
+          "Balya",
+          "Bandırma",
+          "Bigadiç",
+          "Burhaniye",
+          "Dursunbey",
+          "Edremit",
+          "Erdek",
+          "Gönen",
+          "Havran",
+          "İvrindi",
+          "Karesi",
+          "Kepsut",
+          "Manyas",
+          "Marmara",
+          "Savaştepe",
+          "Sındırgı",
+          "Susurluk"
+        ]
+      },
+      {
+        "city": "İzmir",
+        "towns": [
+          "Aliağa",
+          "Bayındır",
+          "Bayraklı",
+          "Bergama",
+          "Beydağ",
+          "Bornova",
+          "Buca",
+          "Çeşme",
+          "Çiğli",
+          "Dikili",
+          "Foça",
+          "Gaziemir",
+          "Güzelbahçe",
+          "Karabağlar",
+          "Karaburun",
+          "Karşıyaka",
+          "Kemalpaşa",
+          "Kınık",
+          "Kiraz",
+          "Konak",
+          "Menderes",
+          "Menemen",
+          "Narlıdere",
+          "Ödemiş",
+          "Seferihisar",
+          "Selçuk",
+          "Tire",
+          "Torbalı",
+          "Urla"
+        ]
+      },
+      {
+        "city": "İstanbul",
+        "towns": [
+          "Adalar",
+          "Arnavutköy",
+          "Atacity",
+          "Avcılar",
+          "Bağcılar",
+          "Bahçelievler",
+          "Bakırköy",
+          "Başakcity",
+          "Bayrampaşa",
+          "Beşiktaş",
+          "Beykoz",
+          "Beylikdüzü",
+          "Beyoğlu",
+          "Büyükçekmece",
+          "Çatalca",
+          "Çekmeköy",
+          "Esenler",
+          "Esenyurt",
+          "Eyüpsultan",
+          "Fatih",
+          "Gaziosmanpaşa",
+          "Güngören",
+          "Kadıköy",
+          "Kağıthane",
+          "Kartal",
+          "Küçükçekmece",
+          "Maltepe",
+          "Pendik",
+          "Sancaktepe",
+          "Sarıyer",
+          "Silivri",
+          "Sultanbeyli",
+          "Sultangazi",
+          "Şile",
+          "Şişli",
+          "Tuzla",
+          "Ümraniye",
+          "Üsküdar",
+          "Zeytinburnu"
+        ]
+      },
+      {
+        "city": "Mersin",
+        "towns": [
+          "Akdeniz",
+          "Anamur",
+          "Aydıncık",
+          "Bozyazı",
+          "Çamlıyayla",
+          "Erdemli",
+          "Gülnar",
+          "Mezitli",
+          "Mut",
+          "Silifke",
+          "Tarsus",
+          "Toroslar",
+          "Yenicity"
+        ]
+      },
+      {
+        "city": "Adana",
+        "towns": [
+          "Aladağ",
+          "Ceyhan",
+          "Çukurova",
+          "Feke",
+          "İmamoğlu",
+          "Karaisalı",
+          "Karataş",
+          "Kozan",
+          "Pozantı",
+          "Saimbeyli",
+          "Sarıçam",
+          "Seyhan",
+          "Tufanbeyli",
+          "Yumurtalık",
+          "Yüreğir"
+        ]
+      },
+      {
+        "city": "Çanakkale",
+        "towns": [
+          "Ayvacık",
+          "Bayramiç",
+          "Biga",
+          "Bozcaada",
+          "Çan",
+          "Eceabat",
+          "Ezine",
+          "Gelibolu",
+          "Gökçeada",
+          "Lapseki",
+          "Yenice"
+        ]
+      }
+    ]
+  }
+}
+
+

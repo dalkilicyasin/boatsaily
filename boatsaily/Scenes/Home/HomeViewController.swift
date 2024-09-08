@@ -51,6 +51,7 @@ class HomeViewController: UIViewController, Storyboarded {
         self.customCityPicker.tag = 0
         self.customTownPicker.tag = 1
         
+        viewModel.getCityList()
         createDatePicker()
     }
 
@@ -84,7 +85,6 @@ class HomeViewController: UIViewController, Storyboarded {
     }
     
     
-    
     @objc func doneButtonAction() {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
@@ -97,9 +97,10 @@ class HomeViewController: UIViewController, Storyboarded {
     
     @objc func donButtonActionCustom() {
         if viewModel.selectedTag == 0 {
-            selectCityLabel.text = "\(viewModel.selectedCity)"
+            self.selectCityLabel.text = "\(self.viewModel.selectedCity)"
+            self.viewModel.getTownList(self.viewModel.selectedCity)
         }else {
-            selectTownLabel.text = "\(viewModel.selectedTown)"
+            self.selectTownLabel.text = "\(self.viewModel.selectedTown)"
         }
         self.view.endEditing(true)
     }
