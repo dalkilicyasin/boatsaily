@@ -22,17 +22,18 @@ class BoatListViewModel {
     func filterBoatList(cityName: String, townName: String, date: String) {
         print(self.boatInformationList)
        for item in self.boatInformationList {
-            guard cityName == item.city && townName == item.town else { return}
-                self.boatInformation.city = item.city
-                self.boatInformation.town = item.town
-                self.boatInformation.tourName = item.tourName
-                self.boatInformation.arrivedTime = item.arrivedTime
-                self.boatInformation.departureTime = item.departureTime
-                self.boatInformation.extras = item.extras
-                self.boatInformation.notes = item.notes
-                self.boatInformation.imageData = Array(item.imageData)
-                self.boatInformation.destinations = Array(item.destinations)
-            self.filteredBoatList.append(boatInformation)
+           if cityName == item.city && townName == item.town {
+               self.boatInformation.city = item.city
+               self.boatInformation.town = item.town
+               self.boatInformation.tourName = item.tourName
+               self.boatInformation.arrivedTime = item.arrivedTime
+               self.boatInformation.departureTime = item.departureTime
+               self.boatInformation.extras = item.extras
+               self.boatInformation.notes = item.notes
+               self.boatInformation.imageData = Array(item.imageData)
+               self.boatInformation.destinations = Array(item.destinations)
+               self.filteredBoatList.append(boatInformation)
+           }
         }
     }
     
