@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let _ = UserDefaults.standard.setValue(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
         let _ = print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.path)
+        
+        let appID = "data-ovpatrg" // MongoDB Realm uygulamanın App ID'sini buraya yaz.
+               let app = App(id: appID)
+
+               // Anonim giriş yapılıyor
+               app.login(credentials: Credentials.anonymous) { result in
+                   switch result {
+                   case .failure(let error):
+                       print("Giriş yapılamadı: \(error.localizedDescription)")
+                   case .success(let user):
+                       print("Başarıyla giriş yapıldı: \(user)")
+                   }
+               }
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = TabBarViewController()

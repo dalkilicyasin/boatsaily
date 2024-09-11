@@ -24,6 +24,7 @@ class CreateBoatViewModel {
     private var imageDataList: [Data] = []
     
     @ObservedResults(BoatInformationList.self) var boatInformationList
+    var boatInformationTempList: [BoatInformationList] = []
     
     func saveBoatInformations() {
         let boatInformationList = BoatInformationList()
@@ -41,10 +42,40 @@ class CreateBoatViewModel {
                 imageDataList.append(data)
             }
         }
-       
+        
         boatInformationList.imageData.append(objectsIn: self.imageDataList)
         
-        $boatInformationList.append(boatInformationList)
+        
+        self.addBoatInformation(boatInformationList)
+    }
+    
+    func addBoatInformation(_ boatList: BoatInformationList) {
+        let app = App(id: "data-ovpatrg") // MongoDB App ID
+        let user = app.currentUser
+        
+        let client = user?.mongoClient("ClusterBoatSaily")
+        let database = client?.database(named: "BoatSaily")
+        let collection = database?.collection(withName: "BoatInformations")
+        
+        let newBoat = [
+            "tourName": AnyBSON.string(boatList.tourName ?? ""),
+            "city":AnyBSON.string(boatList.city ?? ""),
+            "town": AnyBSON.string(boatList.tourName ?? ""),
+            "departureTime":AnyBSON.string(boatList.city ?? ""),
+            "arrivedTime": AnyBSON.string(boatList.tourName ?? ""),
+            "extras":AnyBSON.string(boatList.city ?? ""),
+            "notes": AnyBSON.string(boatList.tourName ?? ""),
+            "tourDate":AnyBSON.string(boatList.city ?? "")
+        ] as Document
+        
+        collection?.insertOne(newBoat ) { result in
+            switch result {
+            case .failure(let error):
+                print("\(error.localizedDescription)")
+            case .success(let objectId):
+                print(" Your Data Has been added to Realm ObjectId: \(objectId)")
+            }
+        }
     }
 }
 
