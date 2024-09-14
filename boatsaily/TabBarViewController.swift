@@ -20,6 +20,4 @@ class TabBarViewController: UITabBarController {
         
         viewControllers = [homeCoordinator.navigationController, profileCoordinator.navigationController]
     }
-
-
 }

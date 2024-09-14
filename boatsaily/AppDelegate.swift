@@ -16,10 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        //Realm Database file location address
         let _ = UserDefaults.standard.setValue(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
         let _ = print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.path)
         
-        let appID = "data-ovpatrg" // MongoDB Realm uygulamanın App ID'sini buraya yaz.
+        //Realm database login TODO: will remove
+        let appID = "data-ovpatrg"
                let app = App(id: appID)
 
                // Anonim giriş yapılıyor
@@ -38,7 +40,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
-
-
 }
 

@@ -8,7 +8,7 @@
 import Foundation
 import RealmSwift
 
-class BoatInformationList: Object, Identifiable {
+class BoatInformationList: Object, Identifiable, Codable {
     @Persisted(primaryKey: true) var id: ObjectId
     @Persisted var tourName: String?
     @Persisted var title: String?

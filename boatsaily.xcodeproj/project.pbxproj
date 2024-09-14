@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A08E6B5C2A4C7C73482A5852 /* Pods_boatsaily.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458F8ABE6534B01F2EBCA198 /* Pods_boatsaily.framework */; };
 		D907C69C2C54E42E00DA6862 /* BoatInformationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D907C69B2C54E42E00DA6862 /* BoatInformationList.swift */; };
+		D91A59852C92FC3E00F194F3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D91A59842C92FC3E00F194F3 /* Alamofire */; };
 		D93340212C5633C800645AF7 /* CreateBoatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D933401F2C5633C800645AF7 /* CreateBoatCollectionViewCell.swift */; };
 		D93340222C5633C800645AF7 /* CreateBoatCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93340202C5633C800645AF7 /* CreateBoatCollectionViewCell.xib */; };
 		D93340272C56753E00645AF7 /* Proxima Nova Font.otf in Resources */ = {isa = PBXBuildFile; fileRef = D93340242C56753E00645AF7 /* Proxima Nova Font.otf */; };
@@ -152,6 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D91A59852C92FC3E00F194F3 /* Alamofire in Frameworks */,
 				A08E6B5C2A4C7C73482A5852 /* Pods_boatsaily.framework in Frameworks */,
 				D9B58B892C70D0C400698B10 /* ImageSlideshow in Frameworks */,
 			);
@@ -468,6 +470,7 @@
 			name = boatsaily;
 			packageProductDependencies = (
 				D9B58B882C70D0C400698B10 /* ImageSlideshow */,
+				D91A59842C92FC3E00F194F3 /* Alamofire */,
 			);
 			productName = boatsaily;
 			productReference = D94A1F572C49A6920066A996 /* boatsaily.app */;
@@ -544,6 +547,7 @@
 			mainGroup = D94A1F4E2C49A6920066A996;
 			packageReferences = (
 				D9B58B872C70D06200698B10 /* XCRemoteSwiftPackageReference "ImageSlideshow" */,
+				D91A59832C92FC3400F194F3 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = D94A1F582C49A6920066A996 /* Products */;
 			projectDirPath = "";
@@ -874,6 +878,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -905,6 +910,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1036,6 +1042,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		D91A59832C92FC3400F194F3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
 		D9B58B872C70D06200698B10 /* XCRemoteSwiftPackageReference "ImageSlideshow" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/zvonicek/ImageSlideshow.git";
@@ -1047,6 +1061,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		D91A59842C92FC3E00F194F3 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D91A59832C92FC3400F194F3 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		D9B58B882C70D0C400698B10 /* ImageSlideshow */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D9B58B872C70D06200698B10 /* XCRemoteSwiftPackageReference "ImageSlideshow" */;

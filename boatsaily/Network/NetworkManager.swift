@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Alamofire
 
 enum ErrorHandling: Error {
     case serviceFault
@@ -28,6 +29,23 @@ class NetworkManager {
             complation(.success(result))
         } catch {
             complation(.failure(ErrorHandling.decodeFault))
+        }
+    }
+    
+    func callRealmData<T: Codable>(type: T.Type, url: String, method: HTTPMethod, complation: @escaping(Result<T, ErrorHandling>) -> Void) {
+        let filterParameters: [String: Any] = [
+            "filter": [
+                "city": "İstanbul"  
+            ]
+        ]
+        
+        AF.request(url, method: method, parameters: filterParameters).responseDecodable(of: T.self) { response in
+            switch response.result {
+            case .success(let data):
+                complation(.success(data))
+            case .failure(_):
+                complation(.failure(.decodeFault))
+            }
         }
     }
 }

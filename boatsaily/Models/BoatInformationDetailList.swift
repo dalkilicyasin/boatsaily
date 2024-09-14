@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct BoatInformationDetailList {
+struct BoatInformationDetailList: Codable {
+    var _id: String?
     var tourName: String?
     var title: String?
     var city: String?
@@ -20,3 +21,17 @@ struct BoatInformationDetailList {
     var imageData: [Data] = []
     var tourDate: String?
 }
+
+struct BoatInformationTempDetailList: Codable {
+    var _id: String?
+    var extras: String?
+    var arrivedTime: String?
+    var tourName: String?
+    var tourDate: String?
+    var departureTime: String?
+    var city: String?
+    var town: String?
+    var notes: String?
+}
+
+
