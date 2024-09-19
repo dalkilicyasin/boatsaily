@@ -20,7 +20,7 @@ class BoatListViewController: UIViewController, Storyboarded {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        self.viewModel = BoatListViewModel()
+        self.viewModel = BoatListViewModel(boatListRepository: BoatListNetworkService())
        super.init(coder: aDecoder)
         
     }

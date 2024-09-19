@@ -16,6 +16,12 @@ public enum HomeRoute{
 class HomeCoordinator: Coordinator {
     typealias T = HomeRoute
     
+    lazy var networkManager: NetworkManagerTemp = {
+        let config = NetworkConfig(baseURL: URL(string: "https://eu-central-1.aws.data.mongodb-api.com")!)
+        return NetworkManagerTemp(config: config)
+    }()
+    
+    
     var childCoordinators: [ any Coordinator] = []
     
     var navigationController: UINavigationController
@@ -34,7 +40,7 @@ class HomeCoordinator: Coordinator {
         switch route {
         case .toDetail:
             if let data = data as? BoatInformationDetailList {
-                let detailVC = BoatListCoordinator(navigationController: self.navigationController, boatInformationDetailList: data )
+                let detailVC = BoatListCoordinator(navigationController: self.navigationController, boatInformationDetailList: data, networkManager: networkManager )
                 detailVC.start()
             }
         }

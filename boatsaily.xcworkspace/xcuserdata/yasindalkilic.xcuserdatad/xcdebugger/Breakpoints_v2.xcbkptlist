@@ -23,16 +23,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "051D07BE-8382-45E8-9E85-3ADDD3EF3D1A"
+            uuid = "5741F4B0-589D-4BB8-9DD6-23D728B0CB51"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "boatsaily/Scenes/Home/BoatList/BoatListViewModel.swift"
+            filePath = "boatsaily/Network/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "callList()"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "request(_:type:method:complation:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

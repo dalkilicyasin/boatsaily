@@ -17,6 +17,7 @@ class HomeViewModel {
     var selectedTag = 0
     
     func getCityList() {
+        /*
         NetworkManager.shared.callLocaitonList(type: CityResponseModel.self, chosenLocation: "cities") { [weak self] response in
             
             switch response {
@@ -25,7 +26,18 @@ class HomeViewModel {
             case .failure(let error):
                 print("\(error.localizedDescription)")
             }
+        }*/
+        let networkService = HomeNetworkService()
+        networkService.getCityList { [weak self] result in
+            switch result {
+            case .success(let data):
+                print("\(data)")
+                self?.cityList = data.Turkey?.cities ?? []
+            case .failure(let error):
+                print("\(error.localizedDescription)")
+            }
         }
+        
     }
     
     func getTownList(_ selectedCity: String) {

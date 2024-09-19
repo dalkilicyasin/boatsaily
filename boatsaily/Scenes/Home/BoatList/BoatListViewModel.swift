@@ -15,8 +15,27 @@ class BoatListViewModel {
     var filteredBoatList: [BoatInformationDetailList] = []
     var boatInformation = BoatInformationDetailList()
     
+    private let boatListRepository: BoatListRepository
+    
+    init(boatListRepository: BoatListRepository) {
+        self.boatListRepository = boatListRepository
+    }
+    
     func callList() {
-        NetworkManager.shared.callRealmData(type: [BoatInformationTempDetailList].self, url: "https://eu-central-1.aws.data.mongodb-api.com/app/data-ovpatrg/endpoint/boatList", method: .post) { [weak self] response in
+        
+        boatListRepository.getBoatList { [weak self] result in
+          //  guard let self = self else {return}
+            
+            switch result {
+            case .success(let data):
+                print("\(data)")
+            case .failure(let error):
+                print("\(error)")
+            }
+        }
+        
+        
+    /*    NetworkManager.shared.callRealmData(type: [BoatInformationTempDetailList].self, url: "https://eu-central-1.aws.data.mongodb-api.com/app/data-ovpatrg/endpoint/boatList", method: .post) { [weak self] response in
             switch response {
             case .success(let boatList):
                 print("\(boatList)")
@@ -25,7 +44,7 @@ class BoatListViewModel {
                 print("\(error)")
             }
         }
-        
+        */
         self.filterBoatList(cityName: self.boatListDetailModel.city ?? "", townName: boatListDetailModel.town ?? "", date: boatInformation.tourDate ?? "")
     }
     
