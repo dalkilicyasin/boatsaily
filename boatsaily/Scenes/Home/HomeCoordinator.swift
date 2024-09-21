@@ -17,7 +17,7 @@ class HomeCoordinator: Coordinator {
     typealias T = HomeRoute
     
     lazy var networkManager: NetworkManagerTemp = {
-        let config = NetworkConfig(baseURL: URL(string: "https://eu-central-1.aws.data.mongodb-api.com")!)
+        let config = NetworkConfig(baseURL: URL(string: "https://eu-central-1.aws.data.mongodb-api.com")!) // TODO: will manage from scheme
         return NetworkManagerTemp(config: config)
     }()
     
